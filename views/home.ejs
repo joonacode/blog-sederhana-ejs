@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') -%>
+<section>
+    <div class="container">
+        <a href="/create" class="btn btn-primary">Create New Post</a>
+        <div class="post">
+            <h2>Home Page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum qui iure reiciendis placeat sint
+                impedit blanditiis error, ex corrupti officiis, et nesciunt illum distinctio deleniti facilis eaque
+                eligendi veniam.</p>
+        </div>
+        <% posts.map(v => { %> 
+            <div class="post">
+                <h2><%= v.title %> </h2>
+                <p><%= v.content.length >= 200 ? v.content.substr(0, 200)+'....' : v.content %> </p>
+                <a href="/post/<%= v.title %>" class="btn btn-primary">Read More</a>
+            </div>
+        <% }); %> 
+
+    </div>
+</section>
+<%- include('partials/footer.ejs') -%>

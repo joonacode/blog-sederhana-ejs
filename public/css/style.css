@@ -1,0 +1,117 @@
+body {
+    background-color: #fafafa;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Krub', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+    color: #333;
+    /* margin-bottom: 0; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #888;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px !important;
+}
+
+
+.navbar a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav-link a{
+    margin-left: 10px;
+}
+
+main {
+    margin: 30px 0;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-weight: lighter;
+    color: #999;
+}
+
+p{
+    line-height: 1.8;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary  {
+    background-color: salmon;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.post {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.post a{
+    display: inline-block;
+    margin-top: 5px;
+}
